@@ -1,0 +1,30 @@
+# Lint configuration for SLM/LLM Architect & Builder Studio.
+# Pinned explicitly so results don't drift with Ruff's default rule set.
+# py310 is the floor: dataclass/function annotations use PEP 604 (`int | None`),
+# which is evaluated at runtime and needs 3.10+.
+target-version = "py310"
+
+exclude = ["build", "dist", ".lint_backup", "__pycache__"]
+
+[lint]
+select = [
+    "E",      # pycodestyle errors
+    "F",      # pyflakes (undefined names, unused imports)
+    "I",      # import sorting
+    "UP",     # pyupgrade (modern syntax)
+    "B",      # bugbear
+    "SIM",    # simplify
+    "PERF",   # performance
+    "RUF",    # ruff-specific
+]
+
+ignore = [
+    # Broad `except Exception` is deliberate here: worker threads and the GUI
+    # convert any failure into an error dialog rather than crashing the app.
+    "BLE001",
+    # Skipping unreadable/malformed files while scanning a user-chosen folder is
+    # intended behaviour; the project has no logging framework to route it to.
+    "S112",
+    # Long lines are tolerated in QSS style blocks and validator message strings.
+    "E501",
+]

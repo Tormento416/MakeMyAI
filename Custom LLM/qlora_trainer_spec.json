@@ -1,0 +1,19 @@
+{
+  "model_name": "SLM-Micro-50M",
+  "architecture_type": "llama",
+  "qlora_compatible": true,
+  "suggested_target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "suggested_target_modules_str": "q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj",
+  "torch_dtype": "bfloat16",
+  "vocab_size": 32000,
+  "context_length": 2048,
+  "parameters": "57.29M"
+}

@@ -1,0 +1,1 @@
+[SUCCESS] [2026-07-30 22:42:00] Fixed missing detect_hardware method in SLMBuilderMainWindow and rebuilt dist/MakeMyAI.exe binary.
