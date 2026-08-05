@@ -18,15 +18,16 @@ A standalone GUI application for designing, instantiating, configuring, and pack
 
 ---
 
-## 📦 Precompiled Binaries (Standalone Executables)
+## 📦 Precompiled Binary (Standalone Executable)
 
-Due to GitHub's file size limitations (100MB per file), the precompiled executables (`MakeMyAI.exe` and `SLM_LLM_Architect_Studio.exe`) are stored in the `dist/` directory as split multi-volume 7z archives (`.7z.001`, `.7z.002`, etc.).
+Due to GitHub's file size limitations (100MB per file), the precompiled executable `MakeMyAI.exe` is stored in the `dist/` directory as a split multi-volume 7z archive (`MakeMyAI.7z.001`, `MakeMyAI.7z.002`, etc.).
 
 ### How to Extract & Run:
 1. Make sure you have **[7-Zip](https://www.7-zip.org/)** (or another archive utility that supports split volumes) installed.
-2. Download all parts for the executable you want to run (e.g., `MakeMyAI.7z.001`, `MakeMyAI.7z.002`, etc.) into the same folder.
-3. Right-click on the first volume (the one ending in `.7z.001`) and select **7-Zip -> Extract Here** (or extract to a folder).
-4. Run the reconstructed `.exe` file directly. No Python installation or dependency setup is required for the standalone versions.
+2. Download all parts (`MakeMyAI.7z.001` through `MakeMyAI.7z.027`) into the same folder.
+3. Right-click on the first volume (`MakeMyAI.7z.001`) and select **7-Zip -> Extract Here** (or extract to a folder).
+4. Run the reconstructed `MakeMyAI.exe` file directly. No Python installation or dependency setup is required.
+
 
 ---
 
